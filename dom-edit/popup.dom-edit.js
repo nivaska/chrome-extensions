@@ -20,4 +20,27 @@ $(function() {
         "}"
     });
   });
+
+  $("#actDwnInsta").click(function() {
+    chrome.tabs.executeScript(
+      {
+        file: "download-insta.js"
+      },
+      downloadItem
+    );
+  });
+
+  $("#actDarkMode").click(function() {
+    chrome.tabs.insertCSS(
+      {
+        file: "nite-mode.css"
+      },
+      downloadItem
+    );
+  });
 });
+
+function downloadItem(downloadUrl) {
+  if (downloadUrl && downloadUrl.length > 0 && downloadUrl[0])
+    chrome.downloads.download({ url: downloadUrl[0] });
+}

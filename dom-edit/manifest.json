@@ -2,7 +2,7 @@
   "name": "DOM Editor",
   "description": "Useful DOM modifications",
   "version": "1.0",
-  "permissions": ["activeTab", "tabs", "*://*/*"],
+  "permissions": ["activeTab", "tabs", "*://*/*", "downloads"],
   "icons": {
     "48": "images/web-48.png"
   },
