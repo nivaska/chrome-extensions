@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="popup.sticky-youtube.js"></script>
+    <style>
+      body {
+        padding: 5px 0px 2px;
+        width: 200px;
+        background: #2c313a;
+        color: white;
+      }
+      .mb-3 {
+        margin-bottom: 3px;
+      }
+      .btn {
+        background-color: #1aa3ff;
+        color: white;
+        font: small;
+        border-radius: 1px;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #007acc;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      id="input-url"
+      style="width: 180px;font: smaller"
+      type="text"
+      placeholder="Paste Youtube URL here"
+    />
+    <div style="margin-top: 10px;">
+      <input type="button" id="small-player" class="btn" value="Small" />
+      <input
+        type="button"
+        id="large-player"
+        class="btn"
+        style="margin-left: 5px;"
+        value="Large"
+      />
+    </div>
+  </body>
+</html>

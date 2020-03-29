@@ -31,12 +31,9 @@ $(function() {
   });
 
   $("#actDarkMode").click(function() {
-    chrome.tabs.insertCSS(
-      {
-        file: "nite-mode.css"
-      },
-      downloadItem
-    );
+    chrome.tabs.insertCSS({
+      file: "nite-mode.css"
+    });
   });
 });
 
