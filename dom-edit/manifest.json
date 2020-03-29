@@ -1,0 +1,24 @@
+{
+  "name": "DOM Editor",
+  "description": "Useful DOM modifications",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs", "*://*/*"],
+  "icons": {
+    "48": "images/web-48.png"
+  },
+  "background": {
+    "scripts": ["background.dom-edit.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "DOM Editor",
+    "default_popup": "popup.dom-edit.html",
+    "default_icon": {
+      "16": "images/web-16.png",
+      "24": "images/web-24.png",
+      "32": "images/web-32.png"
+    }
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
